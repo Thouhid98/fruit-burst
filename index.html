@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Brust</title>
+    <!-- Daisy UI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Fontawesome  -->
+    <script src="https://kit.fontawesome.com/1e7c381e8f.js" crossorigin="anonymous"></script>
+    <!-- Custom styles -->
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 210px;
+            left: 97px;
+            width: 1152px;
+            height: 628px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.7); 
+        }
+     
+    </style>
+
+</head>
+<body>
+    <!-- This is header section  -->
+    <header>
+        <nav class="p-24 pt-10 ">
+            <div class="navbar  bg-[#F85559] rounded-full">
+                <div>
+                    <ul class="flex flex-1 text-white ml-6 font-lato gap-4">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
+                </div>
+
+                <div class=" flex flex-1 text-white gap-2 justify-center ml-28">
+                    <img src="./images/logo.png" alt="">
+                    <h2 class="font-bold text-4xl font-lato">Fruit Burst</h2>
+                </div>
+
+                <div class="flex  flex-1 justify-end mr-4 ">
+                  <div class="form-control ">
+                    <input class="rounded-full p-4 h-10" type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto"/>
+                    <i class="flex justify-end mr-3 -mt-6 fa-solid fa-magnifying-glass"></i>
+                    
+                  </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Banner section  -->
+        <div class="hero min-h-screen ml-24 max-w-6xl rounded-lg  text-white "  style="  background-image: url('./images/banner1.png')">
+            <div class="hero-overlay"></div> 
+            <div class="hero-content text-center" >
+              <div class="max-w-md">
+                <h1 class="text-5xl font-bold font-lato">Exotic tastes at your doorstep</h1>
+                <p class="py-6">We supply highly quality organic products.</p>
+                <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato">Shop Now</button>
+              </div>
+            </div>
+          </div>
+    </header>
+
+
+    <!-- This is Main section  -->
+    <main>
+        <!-- Meet The team section  -->
+        <section class="text-white font-lato">
+        <div class="hero max-w-6xl min-h-screen ml-24 mt-10 rounded-lg  bg-cover bg-center" style="background-image: url('./images/team.png')">
+            <div class="hero-overlay mt-[665px]"></div> 
+            
+            <div class="hero-content text-center -mt-60" >
+                <div class="max-w-md">
+                  <h1 class="text-4xl text-white font-bold font-lato">Meet the team section</h1>
+                  <p class="py-6 text-white text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>    
+                </div>     
+            </div>       
+        
+        <div class="hero-content flex justify-center gap-16 mt-24">
+        <div class="  text-white text-center space-y-2">
+            <div class="avatar ">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="/images//member1.png" />
+                </div>
+              </div>
+              <p >Awlad Hossain</p>
+              <p class="">Fruits Expert</p>
+              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+        </div>
+
+        <div class="   text-white text-center space-y-2">
+            <div class="avatar">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="/images//member2.png" />
+                </div>
+              </div>
+              <p >Safia Chowdhury</p>
+              <p class="">Fruits Expert</p>
+              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+        </div>
+
+        <div class="   text-white text-center space-y-2">
+            <div class="avatar ">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="/images//member3.png" />
+                </div>
+              </div>
+              <p >Rokib Hossain</p>
+              <p class="">Fruits Expert</p>
+              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+        </div>
+
+        <div class="  text-white text-center space-y-2">
+            <div class="avatar ">
+                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                  <img src="/images//member4.png" />
+                </div>
+              </div>
+              <p >Chaity</p>
+              <p class="">Fruits Expert</p>
+              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+        </div>
+      </div>
+    </div>
+    </section>        
+    </main>
+    <!-- This is Footer section  -->
+    <footer class="bg-black text-white h-96 mt-20">
+       <section class="items-center">
+        <div class="flex gap-2 justify-center items-center">
+            <img src="./images/logo.png" alt="">
+            <h1 class="font-lato font-bold text-3xl">Fruit Burst</h1>
+        </div>
+        <div class="flex justify-center items-center">
+            <ul class="flex gap-3">
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Shop</li>
+                <li>All Fruits</li>
+                <li>Support</li>
+                <li>My Account</li>
+            </ul>
+        </div>
+        <div class="flex justify-center gap-3 items-center ">
+            <i class="fa-brands fa-twitter w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-facebook w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-youtube w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-linkedin-in w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-instagram w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
+        </div>
+    </section> 
+    </footer>
+</body>
+</html>
