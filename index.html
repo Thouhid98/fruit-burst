@@ -18,15 +18,24 @@
         .font-lato{
             font-family: 'Lato', sans-serif;
         }
+        .carousel-overlay {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1152px;
+            height: 480px;
+            border-radius: 8px;
+            background-color: rgba(0, 0, 0, 0.7); 
+        }
         .hero-overlay {
             position: absolute;
-            top: 210px;
-            left: 97px;
+            top: 240px;
+            left: 94px;
             width: 1152px;
             height: 628px;
             border-radius: 8px;
             background-color: rgba(0, 0, 0, 0.7); 
-        }
+        } 
      
     </style>
 
@@ -34,7 +43,7 @@
 <body>
     <!-- This is header section  -->
     <header>
-        <nav class="p-24 pt-10 ">
+        <nav class="p-24 pt-10 -mb-7 ">
             <div class="navbar  bg-[#F85559] rounded-full">
                 <div>
                     <ul class="flex flex-1 text-white ml-6 font-lato gap-4">
@@ -60,16 +69,63 @@
             </div>
         </nav>
         <!-- Banner section  -->
-        <div class="hero min-h-screen ml-24 max-w-6xl rounded-lg  text-white "  style="  background-image: url('./images/banner1.png')">
-            <div class="hero-overlay"></div> 
-            <div class="hero-content text-center" >
-              <div class="max-w-md">
-                <h1 class="text-5xl font-bold font-lato">Exotic tastes at your doorstep</h1>
-                <p class="py-6">We supply highly quality organic products.</p>
+        <section>
+        <div class="carousel max-w-6xl ml-24">
+          
+          <div id="slide1" class="carousel-item relative w-full flex items-center">                  
+            <img src="/images//banner1.png" class="w-full" />
+            <div class="carousel-overlay"></div>             
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>  
+              
+              <div class="absolute left-0 right-0 bottom-5 text-white text-center">
+                <h1 class="text-5xl font-bold font-lato mb-0 pb-0">Exotic tastes at your <br> doorstep</h1>
+                <p class="py-6">We supply highly quality organic products.</p>      
+                <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato">Shop Now</button>
+              </div>
+            </div>            
+          </div> 
+
+          <!-- slider2 -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <img src="/images//banner4.png" class="w-full" />
+            <div class="carousel-overlay"></div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+              <div class="absolute left-0 right-0 bottom-5 pt-4 text-white text-center">
+                <h1 class="text-5xl font-bold font-lato">Exotic tastes at your <br> doorstep</h1>
+                <p class="py-6">We supply highly quality organic products.</p>      
                 <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato">Shop Now</button>
               </div>
             </div>
+          </div>       
+        </div>
+
+        <div class="absolute ml-44 rounded-lg gap-5 flex justify-center items-center w-[1000px] p-5 h-72 bg-white -mt-36 shadow-md">
+          <div class="text-center">
+            <img src="./images/fruit1.png" alt="">
+            <p>Strawberry</p>
           </div>
+          <div class="text-center">
+            <img src="./images/fruit2.png" alt="">
+            <p>Orange</p>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit3.png" alt="">
+            <p>Mango</p>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit4.png" alt="">
+            <p>Strawberry</p>
+          </div>
+          <div class="text-center">
+            <img src="./images/fruit5.png" alt="">
+            <p>Mango</p>
+          </div>
+        </div>
+      </section>
     </header>
 
 
@@ -77,7 +133,7 @@
     <main>
         <!-- Meet The team section  -->
         <section class="text-white font-lato">
-        <div class="hero max-w-6xl min-h-screen ml-24 mt-10 rounded-lg  bg-cover bg-center" style="background-image: url('./images/team.png')">
+        <div class="hero max-w-6xl min-h-screen ml-24 mt-60 rounded-lg  bg-cover bg-center" style="background-image: url('./images/team.png')">
             <div class="hero-overlay mt-[665px]"></div> 
             
             <div class="hero-content text-center -mt-60" >
@@ -143,15 +199,16 @@
     </div>
     </section>        
     </main>
+
     <!-- This is Footer section  -->
     <footer class="bg-black text-white h-96 mt-20">
-       <section class="items-center">
-        <div class="flex gap-2 justify-center items-center">
+       <section class="flex flex-col justify-center items-center pt-[120px] h space-y-2">
+        <div class="flex gap-2 justify-center ">
             <img src="./images/logo.png" alt="">
-            <h1 class="font-lato font-bold text-3xl">Fruit Burst</h1>
+            <h1 class="font-lato font-bold text-4xl mt-3 ">Fruit Burst</h1>
         </div>
-        <div class="flex justify-center items-center">
-            <ul class="flex gap-3">
+        <div class="flex justify-center ">
+            <ul class="flex gap-14">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
@@ -160,12 +217,12 @@
                 <li>My Account</li>
             </ul>
         </div>
-        <div class="flex justify-center gap-3 items-center ">
-            <i class="fa-brands fa-twitter w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-facebook w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-youtube w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-linkedin-in w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-instagram w-10 h-10 color-red bg-red-400 rounded-full pl-3 pt-3"></i>
+        <div class="flex justify-center gap-10 pt-5">
+            <i class="fa-brands fa-twitter w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-facebook w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-youtube w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-linkedin-in w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+            <i class="fa-brands fa-instagram w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
         </div>
     </section> 
     </footer>
