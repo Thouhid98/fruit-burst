@@ -1,340 +1,455 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="corporate">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fruit Brust</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <!-- Daisy UI  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <!-- Fontawesome  -->
-    <script src="https://kit.fontawesome.com/1e7c381e8f.js" crossorigin="anonymous"></script>
-    <!-- Custom styles -->
-    <style>
-        .font-lato{
-            font-family: 'Lato', sans-serif;
-        }
-        .carousel-overlay {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            width: 1152px;
-            height: 480px;
-            border-radius: 8px;
-            background-color: rgba(0, 0, 0, 0.7); 
-        }
-        .hero-overlay {
-            position: absolute;
-            top: 1046px;
-            left: 94px;
-            width: 1152px;
-            height: 628px;
-            border-radius: 8px;
-            background-color: rgba(0, 0, 0, 0.7); 
-        } 
-     
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fruit Brust</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <!-- Daisy UI  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google fonts  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <!-- Fontawesome  -->
+  <script src="https://kit.fontawesome.com/1e7c381e8f.js" crossorigin="anonymous"></script>
+  <!-- Custom styles -->
+  <style>
+    .font-lato {
+      font-family: 'Lato', sans-serif;
+    }
+
+    .carousel-overlay {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 1152px;
+      height: 480px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 1046px;
+      left: 94px;
+      width: 1152px;
+      height: 628px;
+      border-radius: 8px;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
 
 </head>
+
 <body>
-    <!-- This is header section  -->
-    <header>
-        <nav class="p-24 pt-10 -mb-7 ">
-            <div class="navbar  bg-[#F85559] rounded-full">
-                <div>
-                    <ul class="flex flex-1 text-white ml-6 font-lato gap-4">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Shop</li>
-                        <li>All Fruits</li>
-                    </ul>
-                </div>
-
-                <div class=" flex flex-1 text-white gap-2 justify-center ml-28">
-                    <img src="./images/logo.png" alt="">
-                    <h2 class="font-bold text-4xl font-lato">Fruit Burst</h2>
-                </div>
-
-                <div class="flex  flex-1 justify-end mr-4 ">
-                  <div class="form-control ">
-                    <input class="rounded-full p-4 h-10" type="text" placeholder="Search here" class="input input-bordered w-24 md:w-auto"/>
-                    <i class="flex justify-end mr-3 -mt-6 fa-solid fa-magnifying-glass"></i>
-                    
-                  </div>
-                </div>
-            </div>
-        </nav>
-        <!-- Banner section  -->
-        <section>
-        <div class="carousel max-w-6xl ml-24">
-          
-          <div id="slide1" class="carousel-item relative w-full flex items-center">                  
-            <img src="./images/banner-1.png" class="w-full" />
-            <div class="carousel-overlay"></div>             
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide2" class="btn btn-circle">❮</a> 
-              <a href="#slide2" class="btn btn-circle">❯</a>  
-              
-              <div class="absolute left-0 right-0 bottom-5 text-white text-center">
-                <h1 class="text-5xl font-bold font-lato ">Exotic tastes at your <br> doorstep</h1>
-                <p class="py-6">We supply highly quality organic products.</p>      
-                <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato ">Shop Now</button>
-              </div>
-            </div>            
-          </div> 
-
-          <!-- slider2 -->
-          <div id="slide2" class="carousel-item relative w-full">
-            <img src="./images/banner-4.png" class="w-full" />
-            <div class="carousel-overlay"></div>
-            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-              <a href="#slide1" class="btn btn-circle">❮</a> 
-              <a href="#slide1" class="btn btn-circle">❯</a>
-              <div class="absolute left-0 right-0 bottom-5 pt-4 text-white text-center">
-                <h1 class="text-5xl font-bold font-lato">Exotic tastes at your <br> doorstep</h1>
-                <p class="py-6">We supply highly quality organic products.</p>      
-                <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato">Shop Now</button>
-              </div>
-            </div>
-          </div>       
+  <!-- This is header section  -->
+  <header>
+    <nav class="p-24 pt-10 -mb-7 ">
+      <div class="navbar  bg-[#F85559] rounded-full">
+        <div>
+          <ul class="flex flex-1 text-white ml-6 font-lato gap-4">
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Shop</li>
+            <li>All Fruits</li>
+          </ul>
         </div>
 
-        <div class="absolute ml-44 rounded-lg gap-5 flex justify-center items-center w-[1000px] p-5 h-72 bg-white -mt-36 shadow-md">
-          <div class="text-center">
-            <img src="./images/fruit1.png" alt="">
-            <p>Strawberry</p>
-          </div>
-          <div class="text-center">
-            <img src="./images/fruit2.png" alt="">
-            <p>Orange</p>
-          </div>
-          <div class="text-center">
-            <img src="./images/fruit3.png" alt="">
-            <p>Mango</p>
-          </div>
-          <div class="text-center">
-            <img src="./images/fruit4.png" alt="">
-            <p>Strawberry</p>
-          </div>
-          <div class="text-center">
-            <img src="./images/fruit5.png" alt="">
-            <p>Mango</p>
-          </div>
-        </div>
-      </section>
-    </header>
-
-
-    <!-- This is Main section  -->
-    <main>
-        <!-- Deal of the day section  -->
-        <section class="mt-60">
-          <div class="flex flex-1 justify-around">
-             <div>
-              <h2 class="font-lato font-bold text-4xl">Deal of the day</h2>
-              <p class="lg:w-[615px] mt-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-             </div>
-             <!-- countdown -->
-             <div>
-              <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:15;"></span>:
-                  </span>
-                  days
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:10;"></span>:
-                  </span>
-                  hours
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:24;"></span>:
-                  </span>
-                  min
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:49;"></span>
-                  </span>
-                  sec
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Fruits section  -->
-        <section class="flex gap-5 justify-center mt-24">
-
-          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
-            <img class="ml-8" src="./images/fruit6.png" alt="">
-            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
-            <hr class="w-40">
-            <p class="ml-14 w-12 h-5 font-lato text-gray-500">Apples</p>
-            <div class="rating ml-5">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-            </div>
-            <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>                  
-          </div>
-          
-          
-          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
-            <img class="ml-3"  src="./images/fruit7.png" alt="">
-            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
-            <hr class="w-20">
-            <p class="w-12 h-5 font-lato text-gray-500 ml-14">Orange</p>
-            <div class="rating ml-6">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-            </div>   
-             <div> <button class="ml-14 text-[#F85559] font-bold">Details</button></div>       
-          </div>
-         
-          
-          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
-            <img class="ml-8 pt-2" src="./images/fruit8.png" alt="">
-            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
-            <hr class="w-20">
-            <p class="ml-14 w-12 h-5 font-lato text-gray-500">Dragon</p>
-            <div class="rating ml-5 ">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-            </div>
-            <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>                    
-          </div>  
-
-          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
-            <img class="ml-8 pt-2" src="./images/fruit9.png" alt="">
-            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
-            <hr class="w-20">
-            <p class="ml-14 w-12 h-5 font-lato text-gray-500">Banana</p>
-            <div class="rating ml-5">
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
-            </div>
-            <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>          
-          </div>  
-        </section>
-
-        <section>
-        <div><button class="btn lg:ml-[620px] mt-20 text-white rounded-md border-none bg-[#F85559] font-lato">Shop All</button> </div>
-      </section>
-
-        <!-- Meet The team section  -->
-        <section class="text-white font-lato -mt-40">
-        <div class="hero max-w-6xl min-h-screen ml-24 mt-60 rounded-lg  bg-cover bg-center" style="background-image: url('./images/team.png')">
-            <div class="hero-overlay mt-[665px]"></div> 
-            
-            <div class="hero-content text-center -mt-60" >
-                <div class="max-w-md">
-                  <h1 class="text-4xl text-white font-bold font-lato">Meet the team section</h1>
-                  <p class="py-6 text-white text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>    
-                </div>     
-            </div>       
-        
-        <div class="hero-content flex justify-center gap-16 mt-24">
-        <div class="  text-white text-center space-y-2">
-            <div class="avatar ">
-                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src="./images//member-1.png" />
-                </div>
-              </div>
-              <p >Awlad Hossain</p>
-              <p class="">Fruits Expert</p>
-              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+        <div class=" flex flex-1 text-white gap-2 justify-center ml-28">
+          <img src="./images/logo.png" alt="">
+          <h2 class="font-bold text-4xl font-lato">Fruit Burst</h2>
         </div>
 
-        <div class="   text-white text-center space-y-2">
-            <div class="avatar">
-                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src="./images//member-2.png" />
-                </div>
-              </div>
-              <p >Safia Chowdhury</p>
-              <p class="">Fruits Expert</p>
-              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-        </div>
+        <div class="flex  flex-1 justify-end mr-4 ">
+          <div class="form-control ">
+            <input class="rounded-full p-4 h-10" type="text" placeholder="Search here"
+              class="input input-bordered w-24 md:w-auto" />
+            <i class="flex justify-end mr-3 -mt-6 fa-solid fa-magnifying-glass"></i>
 
-        <div class="   text-white text-center space-y-2">
-            <div class="avatar ">
-                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src="./images//member-3.png" />
-                </div>
-              </div>
-              <p >Rokib Hossain</p>
-              <p class="">Fruits Expert</p>
-              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-        </div>
-
-        <div class="  text-white text-center space-y-2">
-            <div class="avatar ">
-                <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <img src="./images//member-4.png" />
-                </div>
-              </div>
-              <p >Chaity</p>
-              <p class="">Fruits Expert</p>
-              <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
-              <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+          </div>
         </div>
       </div>
-    </div>
-        </section>        
-    </main>
+    </nav>
+    <!-- Banner section  -->
+    <section>
+      <div class="carousel max-w-6xl ml-24">
 
-    <!-- This is Footer section  -->
-    <footer class="bg-black text-white h-96 mt-20">
-       <section class="flex flex-col justify-center items-center pt-[120px] h space-y-2">
-        <div class="flex gap-2 justify-center ">
-            <img src="./images/logo.png" alt="">
-            <h1 class="font-lato font-bold text-4xl mt-3 ">Fruit Burst</h1>
+        <div id="slide1" class="carousel-item relative w-full flex items-center">
+          <img src="./images/banner-1.png" class="w-full" />
+          <div class="carousel-overlay"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+
+            <div class="absolute left-0 right-0 bottom-5 text-white text-center">
+              <h1 class="text-5xl font-bold font-lato ">Exotic tastes at your <br> doorstep</h1>
+              <p class="py-6">We supply highly quality organic products.</p>
+              <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato ">Shop Now</button>
+            </div>
+          </div>
         </div>
-        <div class="flex justify-center ">
-            <ul class="flex gap-14">
-                <li>Home</li>
-                <li>About Us</li>
-                <li>Shop</li>
-                <li>All Fruits</li>
-                <li>Support</li>
-                <li>My Account</li>
-            </ul>
+        <!-- slider2 -->
+        <div id="slide2" class="carousel-item relative w-full flex items-center">
+          <img src="./images/banner2.png" class="w-full" />
+          <div class="carousel-overlay"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+
+            <div class="absolute left-0 right-0 bottom-5 text-white text-center">
+              <h1 class="text-5xl font-bold font-lato ">Exotic tastes at your <br> doorstep</h1>
+              <p class="py-6">We supply highly quality organic products.</p>
+              <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato ">Shop Now</button>
+            </div>
+          </div>
         </div>
-        <div class="flex justify-center gap-10 pt-5">
-            <i class="fa-brands fa-twitter w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-facebook w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-youtube w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-linkedin-in w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
-            <i class="fa-brands fa-instagram w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+
+        <!-- slide3 -->
+        <div id="slide3" class="carousel-item relative w-full flex items-center">
+          <img src="./images/banner3.png" class="w-full" />
+          <div class="carousel-overlay"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+
+            <div class="absolute left-0 right-0 bottom-5 text-white text-center">
+              <h1 class="text-5xl font-bold font-lato ">Exotic tastes at your <br> doorstep</h1>
+              <p class="py-6">We supply highly quality organic products.</p>
+              <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato ">Shop Now</button>
+            </div>
+          </div>
         </div>
-    </section> 
-    </footer>
+
+        <!-- slider4 -->
+        <div id="slide4" class="carousel-item relative w-full">
+          <img src="./images/banner-4.png" class="w-full" />
+          <div class="carousel-overlay"></div>
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+            <div class="absolute left-0 right-0 bottom-5 pt-4 text-white text-center">
+              <h1 class="text-5xl font-bold font-lato">Exotic tastes at your <br> doorstep</h1>
+              <p class="py-6">We supply highly quality organic products.</p>
+              <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato">Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banner Fruits section  -->
+      <div
+        class="absolute ml-44 rounded-lg gap-5 flex justify-center items-center w-[1000px] p-5 h-72 bg-white -mt-36 shadow-md">
+        <div class="text-center">
+          <img src="./images/fruit1.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit2.png" alt="">
+          <p>Orange</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit3.png" alt="">
+          <p>Mango</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit4.png" alt="">
+          <p>Strawberry</p>
+        </div>
+        <div class="text-center">
+          <img src="./images/fruit5.png" alt="">
+          <p>Mango</p>
+        </div>
+      </div>
+    </section>
+  </header>
+
+
+  <!-- This is Main section  -->
+  <main>
+    <!-- Deal of the day section  -->
+    <section class="mt-60">
+      <div class="flex flex-1 justify-around">
+        <div>
+          <h2 class="font-lato font-bold text-4xl">Deal of the day</h2>
+          <p class="lg:w-[615px] mt-3">Contrary to popular belief, is not simply random text. It has roots in a piece of
+            classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <!-- countdown -->
+        <div>
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>:
+              </span>
+              days
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:10;"></span>:
+              </span>
+              hours
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:24;"></span>:
+              </span>
+              min
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:49;"></span>
+              </span>
+              sec
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fruits section  -->
+    <section class="flex gap-5 justify-center mt-24">
+
+      <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+        <img class="ml-8" src="./images/fruit6.png" alt="">
+        <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+        <hr class="w-40">
+        <p class="ml-14 w-12 h-5 font-lato text-gray-500">Apples</p>
+        <div class="rating ml-5">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+        </div>
+        <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>
+      </div>
+
+
+      <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+        <img class="ml-3" src="./images/fruit7.png" alt="">
+        <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+        <hr class="w-20">
+        <p class="w-12 h-5 font-lato text-gray-500 ml-14">Orange</p>
+        <div class="rating ml-6">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+        </div>
+        <div> <button class="ml-14 text-[#F85559] font-bold">Details</button></div>
+      </div>
+
+
+      <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+        <img class="ml-8 pt-2" src="./images/fruit8.png" alt="">
+        <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+        <hr class="w-20">
+        <p class="ml-14 w-12 h-5 font-lato text-gray-500">Dragon</p>
+        <div class="rating ml-5 ">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+        </div>
+        <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>
+      </div>
+
+      <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+        <img class="ml-8 pt-2" src="./images/fruit9.png" alt="">
+        <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+        <hr class="w-20">
+        <p class="ml-14 w-12 h-5 font-lato text-gray-500">Banana</p>
+        <div class="rating ml-5">
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+          <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+        </div>
+        <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>
+      </div>
+    </section>
+
+    <section>
+      <div><button class="btn lg:ml-[620px] mt-20 text-white rounded-md border-none bg-[#F85559] font-lato">Shop
+          All</button> </div>
+    </section>
+
+    <!-- Meet The team section  -->
+    <section class="text-white font-lato -mt-40">
+      <div class="hero max-w-6xl min-h-screen ml-24 mt-60 rounded-lg  bg-cover bg-center"
+        style="background-image: url('./images/team.png')">
+        <div class="hero-overlay mt-[665px]"></div>
+
+        <div class="hero-content text-center -mt-60">
+          <div class="max-w-md">
+            <h1 class="text-4xl text-white font-bold font-lato">Meet the team section</h1>
+            <p class="py-6 text-white text-sm">Contrary to popular belief, is not simply random text. It has roots in a
+              piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+        </div>
+
+        <div class="hero-content flex justify-center gap-16 mt-24">
+          <div class="  text-white text-center space-y-2">
+            <div class="avatar ">
+              <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src="./images//member-1.png" />
+              </div>
+            </div>
+            <p>Awlad Hossain</p>
+            <p class="">Fruits Expert</p>
+            <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+          </div>
+
+          <div class="   text-white text-center space-y-2">
+            <div class="avatar">
+              <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src="./images//member-2.png" />
+              </div>
+            </div>
+            <p>Safia Chowdhury</p>
+            <p class="">Fruits Expert</p>
+            <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+          </div>
+
+          <div class="   text-white text-center space-y-2">
+            <div class="avatar ">
+              <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src="./images//member-3.png" />
+              </div>
+            </div>
+            <p>Rokib Hossain</p>
+            <p class="">Fruits Expert</p>
+            <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+          </div>
+
+          <div class="  text-white text-center space-y-2">
+            <div class="avatar ">
+              <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src="./images//member-4.png" />
+              </div>
+            </div>
+            <p>Chaity</p>
+            <p class="">Fruits Expert</p>
+            <i class="fa-brands fa-facebook w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-twitter w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+            <i class="fa-brands fa-linkedin w-6 h-6 pt-1 pr-[1px] rounded-full bg-[#F85559]"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- why choose us section  -->
+    <section>
+      <h1 class="font-lato font-bold text-5xl text-center mt-20">Why Choose Us</h1>
+      <p class="m-auto text-center font-lato w-96 mt-5 mb-5 text-sm">Contrary to popular belief, is not simply random text. It
+        has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+      <div class="flex justify-center gap-10 ">
+        <div class="lg:w-[340px] space-y-10">
+          <div class="flex gap-2 ">
+            <div class="mt-2"><i class="w-10 h-10 pl-3 pt-3 rounded-full bg-gray-400 fa-solid fa-people-group"></i></div>
+            <div>
+              <h2 class="font-lato font-bold text-2xl">Dedicated Team</h2>
+              <hr>
+              <p class="text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <div class="mt-2"><i class="w-10 h-10 pl-3 pt-3 rounded-full bg-gray-400 fa-solid fa-heart"></i></div>
+            <div>
+              <h2 class="font-lato font-bold text-2xl">Fresh is Best</h2>
+              <hr>
+              <p class="text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+
+          <div class="flex gap-2">
+            <div class="mt-2"> <i class="w-10 h-10 pl-3 pt-3 rounded-full bg-gray-400 fa-solid fa-gift"></i></div>
+            <div>
+              <h2 class="font-lato font-bold text-2xl">Gift Certificates</h2>
+              <hr>
+              <p class="text-sm">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+            </div>
+          </div>
+        </div>
+        <!-- why section part2 -->
+        <div class="lg:w-[340px]">
+          <img src="./images/whychoose1.png" alt="">
+        </div>
+
+        <!-- why section part3 -->
+        <div class="lg:w-[340px]">
+          <div class="space-y-10">
+            <div class="flex flex-row-reverse gap-2">
+              <div class="mt-2"><i class="w-10 h-10 pl-3 pt-3 rounded-full bg-gray-400 fa-solid fa-truck-field-un"></i></div>
+              <div>
+                <h2 class="font-lato font-bold text-2xl text-right">Integrated Supplier</h2>
+                <hr>
+                <p class="text-sm text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-row-reverse gap-2">
+              <div class="mt-2"><i class="w-10 h-10 pl-3 pt-3 rounded-full bg-gray-400 fa-solid fa-stethoscope"></i></div>
+              <div>
+                <h2 class="font-lato font-bold text-2xl text-right">Sustainable Practice</h2>
+                <hr>
+                <p class="text-sm text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+
+            <div class="flex flex-row-reverse gap-2 ">
+              <div class="mt-2"><i class="w-10 h-10 pl-3 pt-3 rounded-full bg-gray-400 fa-brands fa-openid"></i></div>
+              <div>
+                <h2 class="font-lato font-bold text-2xl text-right">The Benefits Only</h2>
+                <hr>
+                <p class="text-sm text-right">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- This is Footer section  -->
+  <footer class="bg-black text-white h-96 mt-20">
+    <section class="flex flex-col justify-center items-center pt-[120px] h space-y-2">
+      <div class="flex gap-2 justify-center ">
+        <img src="./images/logo.png" alt="">
+        <h1 class="font-lato font-bold text-4xl mt-3 ">Fruit Burst</h1>
+      </div>
+      <div class="flex justify-center ">
+        <ul class="flex gap-14">
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Shop</li>
+          <li>All Fruits</li>
+          <li>Support</li>
+          <li>My Account</li>
+        </ul>
+      </div>
+      <div class="flex justify-center gap-10 pt-5">
+        <i class="fa-brands fa-twitter w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+        <i class="fa-brands fa-facebook w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+        <i class="fa-brands fa-youtube w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+        <i class="fa-brands fa-linkedin-in w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+        <i class="fa-brands fa-instagram w-10 h-10 color-red bg-gray-400 rounded-full pl-3 pt-3"></i>
+      </div>
+    </section>
+  </footer>
 </body>
+
 </html>
