@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!-- Daisy UI  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -29,7 +30,7 @@
         }
         .hero-overlay {
             position: absolute;
-            top: 240px;
+            top: 1046px;
             left: 94px;
             width: 1152px;
             height: 628px;
@@ -80,9 +81,9 @@
               <a href="#slide2" class="btn btn-circle">❯</a>  
               
               <div class="absolute left-0 right-0 bottom-5 text-white text-center">
-                <h1 class="text-5xl font-bold font-lato mb-0 pb-0">Exotic tastes at your <br> doorstep</h1>
+                <h1 class="text-5xl font-bold font-lato ">Exotic tastes at your <br> doorstep</h1>
                 <p class="py-6">We supply highly quality organic products.</p>      
-                <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato">Shop Now</button>
+                <button class="btn text-white rounded-md border-none bg-[#F85559] font-lato ">Shop Now</button>
               </div>
             </div>            
           </div> 
@@ -132,15 +133,116 @@
     <!-- This is Main section  -->
     <main>
         <!-- Deal of the day section  -->
-        <section>
-          <div>
-
+        <section class="mt-60">
+          <div class="flex flex-1 justify-around">
+             <div>
+              <h2 class="font-lato font-bold text-4xl">Deal of the day</h2>
+              <p class="lg:w-[615px] mt-3">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+             </div>
+             <!-- countdown -->
+             <div>
+              <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:15;"></span>:
+                  </span>
+                  days
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:10;"></span>:
+                  </span>
+                  hours
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:24;"></span>:
+                  </span>
+                  min
+                </div> 
+                <div class="flex flex-col">
+                  <span class="countdown font-mono text-5xl">
+                    <span style="--value:49;"></span>
+                  </span>
+                  sec
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+        <!-- Fruits section  -->
+        <section class="flex gap-5 justify-center mt-24">
+
+          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+            <img class="ml-8" src="./images/fruit6.png" alt="">
+            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+            <hr class="w-40">
+            <p class="ml-14 w-12 h-5 font-lato text-gray-500">Apples</p>
+            <div class="rating ml-5">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+            </div>
+            <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>                  
+          </div>
+          
+          
+          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+            <img class="ml-3"  src="./images/fruit7.png" alt="">
+            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+            <hr class="w-20">
+            <p class="w-12 h-5 font-lato text-gray-500 ml-14">Orange</p>
+            <div class="rating ml-6">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+            </div>   
+             <div> <button class="ml-14 text-[#F85559] font-bold">Details</button></div>       
+          </div>
          
+          
+          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+            <img class="ml-8 pt-2" src="./images/fruit8.png" alt="">
+            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+            <hr class="w-20">
+            <p class="ml-14 w-12 h-5 font-lato text-gray-500">Dragon</p>
+            <div class="rating ml-5 ">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+            </div>
+            <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>                    
+          </div>  
+
+          <div class="space-y-2 lg:w-[260px] lg:h-[400px] border pl-10 pt-5 shadow-xl rounded-lg">
+            <img class="ml-8 pt-2" src="./images/fruit9.png" alt="">
+            <p class="w-60 font-bold font-lato text-2xl">12.90$ - 18.85$</p>
+            <hr class="w-20">
+            <p class="ml-14 w-12 h-5 font-lato text-gray-500">Banana</p>
+            <div class="rating ml-5">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-500" />
+            </div>
+            <div><button class="ml-14 text-[#F85559] font-bold">Details</button> </div>          
+          </div>  
+        </section>
+
+        <section>
+        <div><button class="btn lg:ml-[620px] mt-20 text-white rounded-md border-none bg-[#F85559] font-lato">Shop All</button> </div>
+      </section>
 
         <!-- Meet The team section  -->
-        <section class="text-white font-lato">
+        <section class="text-white font-lato -mt-40">
         <div class="hero max-w-6xl min-h-screen ml-24 mt-60 rounded-lg  bg-cover bg-center" style="background-image: url('./images/team.png')">
             <div class="hero-overlay mt-[665px]"></div> 
             
